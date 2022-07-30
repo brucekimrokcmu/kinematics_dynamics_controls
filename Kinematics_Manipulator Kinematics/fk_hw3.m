@@ -1,0 +1,27 @@
+function [trajectory, G] = fk_hw3(theta, pt_end_bframe, Gwb, Gbs)
+
+    % construct xi^ configuration
+    q1 = [0; 0; 0];    w1 = [0; 0; 1]; wh1 = what_f(w1); v1 = cross(-w1, q1); 
+    q2 = [0; 0; 0];    w2 = [0; 1; 0]; wh2 = what_f(w2); v2 = cross(-w2, q2); 
+    q3 = [0; 0; 0];    w3 = [0; 0; 1]; wh3 = what_f(w3); v3 = cross(-w3, q3); 
+    q4 = [45; 0; 550]; w4 = [0; 1; 0]; wh4 = what_f(w4); v4 = cross(-w4, q4); 
+    q5 = [0; 0; 850];  w5 = [0; 0; 1]; wh5 = what_f(w5); v5 = cross(-w5, q5); 
+    q6 = [0; 0; 850];  w6 = [0; 1; 0]; wh6 = what_f(w6); v6 = cross(-w6, q6); 
+    q7 = [0; 0; 850];  w7 = [0; 0; 1]; wh7 = what_f(w7); v7 = cross(-w7, q7); 
+    % set trajectory
+    trajectory = zeros(4, size(theta,1));
+
+    [et1, ewh1] = et_f(wh1, w1, v1, theta(1,1));
+    [et2, ewh2] = et_f(wh2, w2, v2, theta(2,1));
+    [et3, ewh3] = et_f(wh3, w3, v3, theta(3,1));
+    [et4, ewh4] = et_f(wh4, w4, v4, theta(4,1));
+    [et5, ewh5] = et_f(wh5, w5, v5, theta(5,1));
+    [et6, ewh6] = et_f(wh6, w6, v6, theta(6,1));
+    [et7, ewh7] = et_f(wh7, w7, v7, theta(7,1));
+
+    Gst_theta = et1 * et2 * et3 * et4 * et5 * et6 * et7;
+
+    G = Gst_theta ;
+    trajectory = Gwb * Gbs * Gst_theta * pt_end_bframe;
+    
+end
