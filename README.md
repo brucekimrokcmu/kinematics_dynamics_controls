@@ -1,7 +1,6 @@
-# kinematics_dynamics_controls
+# kinematics, Dynamics and Controls
 
 ## **1. Kinematics**
-
 
 **Unit Quaternions - tracking rigid bodies** <br>
 **Planar Rigid Body Transformations using screw theory in the plane R^2**<br>
@@ -76,4 +75,22 @@ Estimating position and velocity of a Micro-UAV in a noisy environment<br>
 </p><br>
 
 ## **Personal Project - Tree modelling using mass-spring-damper system**
+Modeling Trees as Kinematic Stucture with Spring & Damper System - Moonyoung Lee (moonyoul), Kwang Kyun Kim (kwangkyk)<br>
+
+>Abstract— There is a growing need for automation in
+agriculture as reports of labor shortages increase. However,
+using robots to harvest from trees is challenging because the
+dynamics models of trees are often unknown, which can lead
+to unsafe robot interaction with the tree. We propose to model
+a tree as a series of kinematic chain similar to a robot arm.
+With this model simplification, branches can be modeled as
+a rigid link where motions are then constraint to revolute
+motion around its joints. We then observe tree’s response to
+an applied external disturbance in simulation. We investigate
+how the response of the spring-damping tree model system
+varies as we increase the number of branches in a tree. Our
+experimental results show that fully grown tree with 13 links
+reach steady state in 43% of the time compared to that
+of a less mature tree with only 7 links when an external
+disturbance is applied.
 
