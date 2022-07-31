@@ -1,7 +1,9 @@
 # kinematics, Dynamics and Controls
 ## **0. Personal Project - Tree modelling using mass-spring-damper system**
 Modeling Trees as Kinematic Stucture with Spring & Damper System - Moonyoung Lee (moonyoul), Kwang Kyun Kim (kwangkyk)<br>
-[Paper Link](https://github.com/brucekimrokcmu/kinematics_dynamics_controls/blob/main/Project_TreeModelling_usingMassSpringDamperSystem/KDC_Report.pdf)
+
+[Paper Link](https://github.com/brucekimrokcmu/kinematics_dynamics_controls/blob/main/Project_TreeModelling_usingMassSpringDamperSystem/KDC_Report.pdf)<br>
+
 >Abstract— There is a growing need for automation in
 agriculture as reports of labor shortages increase. However,
 using robots to harvest from trees is challenging because the
