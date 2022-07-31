@@ -1,4 +1,4 @@
-# kinematics, Dynamics and Controls
+# kinematics, Dynamics, and Controls
 ## **0. Personal Project - Tree modelling using mass-spring-damper system**
 Modeling Trees as Kinematic Stucture with Spring & Damper System - Moonyoung Lee (moonyoul), Kwang Kyun Kim (kwangkyk)<br>
 
